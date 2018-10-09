@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "Junior PHP-developer",
+        "isActive": "Y",
+        "rating": "5"
+    },
+    {
+        "id": 2,
+        "name": "Middle PHP-developer",
+        "isActive": "N",
+        "rating": "3"
+    },
+    {
+        "id": 3,
+        "name": "Senior PHP-developer",
+        "isActive": "N",
+        "rating": "3.5"
+    },
+    {
+        "id": 4,
+        "name": "QA Engineer",
+        "isActive": "Y",
+        "rating": "4.8"
+    },
+    {
+        "id": 5,
+        "name": "DevOps Engineer",
+        "isActive": "Y",
+        "rating": "3.2"
+    },
+    {
+        "id": 6,
+        "name": "HR manager",
+        "isActive": "Y",
+        "rating": "1.5"
+    }
+]

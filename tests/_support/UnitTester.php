@@ -1,5 +1,8 @@
 <?php
 
+use SebastianBergmann\Comparator\ArrayComparator;
+use SebastianBergmann\Comparator\Factory;
+use SebastianBergmann\Comparator\ComparisonFailure;
 
 /**
  * Inherited Methods
@@ -20,7 +23,17 @@ class UnitTester extends \Codeception\Actor
 {
     use _generated\UnitTesterActions;
 
-   /**
-    * Define custom actions here
-    */
+    public function assertArrayEquals($expected, $actual)
+    {
+        $result = true;
+        try {
+            $comparator = new ArrayComparator();
+            $comparator->setFactory(new Factory());
+            $comparator->assertEquals($expected, $actual);
+        } catch (ComparisonFailure $e) {
+            $result = false;
+        }
+
+        return $this->assertTrue($result);
+    }
 }
