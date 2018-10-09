@@ -6,7 +6,9 @@
             "email": "chepenkoanton2011@yandex.ru"
         }
     ],
-    "require": {},
+    "require": {
+        "squizlabs/php_codesniffer": "*"
+    },
     "require-dev": {
         "codeception/codeception": "^2.5",
         "sebastian/comparator": "^1.2"
