@@ -1,8 +1,6 @@
 <?php 
 
-use Helper\Unit as UnitHelper;
-use App\Filter\Vacancies;
-use SebastianBergmann\Comparator\ArrayComparator;
+use App\Filter\Solution;
 
 class FilterVacanciesTest extends \Codeception\Test\Unit
 {
@@ -22,7 +20,7 @@ class FilterVacanciesTest extends \Codeception\Test\Unit
      */
     public function testFilterActiveVacancies($expected)
     {
-        $this->tester->assertArrayEquals($expected, Vacancies::filterActive($this->vacancies));
+        $this->tester->assertArrayEquals($expected, Solution::filterActive($this->vacancies));
     }
 
     /**
@@ -30,7 +28,7 @@ class FilterVacanciesTest extends \Codeception\Test\Unit
      */
     public function testCompareRatings($expected, $rating)
     {
-        $this->tester->assertArrayEquals($expected, Vacancies::compareRatings($this->vacancies, $rating));
+        $this->tester->assertArrayEquals($expected, Solution::compareRatings($this->vacancies, $rating));
     }
 
     /**
@@ -38,7 +36,7 @@ class FilterVacanciesTest extends \Codeception\Test\Unit
      */
     public function testContainsString($expected, $str)
     {
-        $this->tester->assertArrayEquals($expected, Vacancies::containsString($this->vacancies, $str));
+        $this->tester->assertArrayEquals($expected, Solution::containsString($this->vacancies, $str));
     }
 
     public function _activeProvider()

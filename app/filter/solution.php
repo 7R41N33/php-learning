@@ -3,13 +3,13 @@
 namespace App\Filter;
 
 /**
- * Class Vacancies
+ * Class Solution
  * @package App\Filter
  *
  * Все функции должны возвращать массив id вакансий
- * @see \App\Filter\Vacancies::getIds
+ * @see \App\Filter\Solution::getIds
  */
-class Vacancies
+class Solution
 {
     /**
      * Метод должен возвращать только активные вакансии
