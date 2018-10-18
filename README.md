@@ -6,19 +6,20 @@ make install
 ### Запуск тестов:
 ##### 1. Запуск всех тестов
 ```
-php vendor/bin/codecept run unit
+make test
 ```
 ##### 2. Запуск конкретного теста
 ```
-php vendor/bin/codecept run unit FilterVacanciesTest
+make test type=unit name=FilterVacanciesTest
+make test type=acceptance name=WebCest
 ```
 
 ### Запуск линтера:
 ```
-php vendor/bin/phpcs --standard=PSR2 -p -v ./app
+make cs
 ```
 
 ### Запуск сервера:
 ```
-php -S localhost:8000 -t app/web/
+make serve
 ```
