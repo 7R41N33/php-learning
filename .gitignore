@@ -1,3 +1,5 @@
 /vendor/
 /composer.phar
-/.idea
+.idea
+.env
+/tests/_data/db/vacancies.db

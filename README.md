@@ -1,6 +1,6 @@
 ### Подготовка проекта:
 ```
-composer install
+make install
 ```
 
 ### Запуск тестов:
