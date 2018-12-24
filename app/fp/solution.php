@@ -2,6 +2,12 @@
 
 namespace App\Fp;
 
+/**
+ * class Solution
+ *
+ * Во всех решениях использовать метод collect
+ * @see https://laravel.com/docs/5.7/collections
+ */
 class Solution
 {
     /**
